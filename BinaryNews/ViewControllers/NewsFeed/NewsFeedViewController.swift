@@ -54,6 +54,17 @@ extension NewsFeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return calculateCellSize()
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let newsDetailVC =  UIStoryboard.main.instantiateNewsDetailViewController() {
+            let navigation = UINavigationController()
+            navigation.viewControllers = [newsDetailVC]
+            navigation.modalPresentationStyle = .fullScreen
+            self.present(navigation, animated: true, completion: nil)
+
+        }
+
+
+    }
     
 }
 
@@ -73,5 +84,6 @@ extension NewsFeedViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+
     
 }

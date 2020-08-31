@@ -25,6 +25,10 @@
 		2E7238A3C77D2B2876C4FB43 /* Pods_BinaryNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEE4A12DAE2FB2BA4B3F8C7F /* Pods_BinaryNewsTests.framework */; };
 		977D73620786D14A6405F074 /* Pods_BinaryNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D186650AADD13B083F2C02 /* Pods_BinaryNews.framework */; };
 		CE941659116C45FEA7411640 /* Pods_BinaryNews_BinaryNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9E185AE4C72FF66E0E8CD8 /* Pods_BinaryNews_BinaryNewsUITests.framework */; };
+		FA1B773324FD52BE00D78CF6 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B773224FD52BE00D78CF6 /* TabBarItemView.swift */; };
+		FA1B773524FD53FF00D78CF6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B773424FD53FF00D78CF6 /* NavigationViewController.swift */; };
+		FA1B773724FD571F00D78CF6 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B773624FD571F00D78CF6 /* NewsDetailViewController.swift */; };
+		FA1B773924FD5AFB00D78CF6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1B773824FD5AFB00D78CF6 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		8DF26F965C5F4B1679C5B15B /* Pods-BinaryNews-BinaryNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinaryNews-BinaryNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-BinaryNews-BinaryNewsUITests/Pods-BinaryNews-BinaryNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9256872D9EDD7B569DAAFB7A /* Pods-BinaryNews-BinaryNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinaryNews-BinaryNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BinaryNews-BinaryNewsUITests/Pods-BinaryNews-BinaryNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA17AD05CA672A0300E1AC78 /* Pods-BinaryNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BinaryNews.release.xcconfig"; path = "Target Support Files/Pods-BinaryNews/Pods-BinaryNews.release.xcconfig"; sourceTree = "<group>"; };
+		FA1B773224FD52BE00D78CF6 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		FA1B773424FD53FF00D78CF6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		FA1B773624FD571F00D78CF6 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		FA1B773824FD5AFB00D78CF6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FEE4A12DAE2FB2BA4B3F8C7F /* Pods_BinaryNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinaryNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1B773924FD5AFB00D78CF6 /* WebKit.framework in Frameworks */,
 				977D73620786D14A6405F074 /* Pods_BinaryNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +117,7 @@
 		0E11F1A6B8904C31A4C70E60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA1B773824FD5AFB00D78CF6 /* WebKit.framework */,
 				03D186650AADD13B083F2C02 /* Pods_BinaryNews.framework */,
 				4F9E185AE4C72FF66E0E8CD8 /* Pods_BinaryNews_BinaryNewsUITests.framework */,
 				FEE4A12DAE2FB2BA4B3F8C7F /* Pods_BinaryNewsTests.framework */,
@@ -137,6 +147,7 @@
 			children = (
 				10D8907024FCE59200909C80 /* NewsFeedViewController.swift */,
 				10D8907224FCE69200909C80 /* NewsCellView.swift */,
+				FA1B773624FD571F00D78CF6 /* NewsDetailViewController.swift */,
 			);
 			path = NewsFeed;
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 		10DDD02D24FCD63000E42760 /* BinaryNews */ = {
 			isa = PBXGroup;
 			children = (
+				FA1B773124FD52AD00D78CF6 /* Views */,
 				10D8907424FCEDEF00909C80 /* Extension */,
 				10D8906C24FCE2AC00909C80 /* ViewControllers */,
 				10D8906924FCDF3000909C80 /* Manager */,
@@ -227,6 +239,15 @@
 				1C64A349E3A32F76D555FB8E /* Pods-BinaryNewsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA1B773124FD52AD00D78CF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA1B773224FD52BE00D78CF6 /* TabBarItemView.swift */,
+				FA1B773424FD53FF00D78CF6 /* NavigationViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,13 +489,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1B773524FD53FF00D78CF6 /* NavigationViewController.swift in Sources */,
 				10DDD03324FCD63000E42760 /* ViewController.swift in Sources */,
 				10DDD02F24FCD63000E42760 /* AppDelegate.swift in Sources */,
 				10D8907924FCFD0F00909C80 /* POIViewController.swift in Sources */,
 				10D8906824FCD99300909C80 /* SpashViewController.swift in Sources */,
 				10D8906B24FCDF4E00909C80 /* TabBarManager.swift in Sources */,
+				FA1B773724FD571F00D78CF6 /* NewsDetailViewController.swift in Sources */,
 				10D8907324FCE69200909C80 /* NewsCellView.swift in Sources */,
 				10DDD03124FCD63000E42760 /* SceneDelegate.swift in Sources */,
+				FA1B773324FD52BE00D78CF6 /* TabBarItemView.swift in Sources */,
 				10D8907B24FCFECC00909C80 /* POICellView.swift in Sources */,
 				10D8907624FCEE0400909C80 /* UIStoryboard+Extension.swift in Sources */,
 				10D8907124FCE59200909C80 /* NewsFeedViewController.swift in Sources */,
@@ -652,7 +676,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9V43M7RFT;
 				INFOPLIST_FILE = BinaryNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,7 +696,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9V43M7RFT;
 				INFOPLIST_FILE = BinaryNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

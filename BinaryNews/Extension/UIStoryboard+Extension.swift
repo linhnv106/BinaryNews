@@ -11,6 +11,8 @@ import UIKit
 extension UIStoryboard {
     enum Constants {
         static let newsFeedIdentifier = "NewsFeedViewController"
+        static let poiViewController = "POIViewController"
+        static let newsDetailViewController = "NewsDetailViewController"
         
     }
     static var main: UIStoryboard {
@@ -21,6 +23,13 @@ extension UIStoryboard {
         return self.instantiateViewController(withIdentifier: Constants.newsFeedIdentifier) as? NewsFeedViewController
 
     }
-    
+    func instantiatePOIViewController() -> POIViewController? {
+           return self.instantiateViewController(withIdentifier: Constants.poiViewController) as? POIViewController
+
+       }
+    func instantiateNewsDetailViewController() -> NewsDetailViewController? {
+             return self.instantiateViewController(withIdentifier: Constants.newsDetailViewController) as? NewsDetailViewController
+
+         }
 }
 
