@@ -1,0 +1,6 @@
+framework module Pods_BinaryNews_BinaryNewsUITests {
+  umbrella header "Pods-BinaryNews-BinaryNewsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
