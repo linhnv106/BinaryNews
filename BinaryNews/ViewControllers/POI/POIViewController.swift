@@ -42,6 +42,15 @@ extension POIViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return calculateCellSize()
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let vc =  UIStoryboard.main.instantiatePOIListViewController() {
+                   let navigation = UINavigationController()
+                   navigation.viewControllers = [vc]
+                   navigation.modalPresentationStyle = .fullScreen
+                   self.present(navigation, animated: true, completion: nil)
+
+               }
+    }
 
 }
 

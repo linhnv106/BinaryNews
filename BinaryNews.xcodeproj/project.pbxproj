@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10581ADB24FE250D00185DA9 /* POIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581ADA24FE250D00185DA9 /* POIListViewController.swift */; };
+		10581AE124FE263900185DA9 /* POIItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AE024FE263900185DA9 /* POIItemCellView.swift */; };
+		10581AE424FE44A000185DA9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AE324FE44A000185DA9 /* EventViewController.swift */; };
+		10581AE624FE44CB00185DA9 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AE524FE44CB00185DA9 /* EventCollectionViewCell.swift */; };
+		10581AEC24FE489F00185DA9 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10581AEB24FE489F00185DA9 /* EventCollectionViewCell.xib */; };
+		10581AEE24FE54E300185DA9 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AED24FE54E300185DA9 /* EventTableViewController.swift */; };
+		10581AF224FE55EC00185DA9 /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AF124FE55EC00185DA9 /* AnimationBarButton.swift */; };
+		10581AF424FE560400185DA9 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AF324FE560400185DA9 /* Rotatable.swift */; };
+		10581AF724FE575D00185DA9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10581AF624FE575D00185DA9 /* Helper.swift */; };
 		10D8906824FCD99300909C80 /* SpashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D8906724FCD99300909C80 /* SpashViewController.swift */; };
 		10D8906B24FCDF4E00909C80 /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D8906A24FCDF4E00909C80 /* TabBarManager.swift */; };
 		10D8907124FCE59200909C80 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D8907024FCE59200909C80 /* NewsFeedViewController.swift */; };
@@ -50,6 +59,15 @@
 
 /* Begin PBXFileReference section */
 		03D186650AADD13B083F2C02 /* Pods_BinaryNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BinaryNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10581ADA24FE250D00185DA9 /* POIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewController.swift; sourceTree = "<group>"; };
+		10581AE024FE263900185DA9 /* POIItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIItemCellView.swift; sourceTree = "<group>"; };
+		10581AE324FE44A000185DA9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		10581AE524FE44CB00185DA9 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		10581AEB24FE489F00185DA9 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
+		10581AED24FE54E300185DA9 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		10581AF124FE55EC00185DA9 /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBarButton.swift; sourceTree = "<group>"; };
+		10581AF324FE560400185DA9 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		10581AF624FE575D00185DA9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		10D8906724FCD99300909C80 /* SpashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashViewController.swift; sourceTree = "<group>"; };
 		10D8906A24FCDF4E00909C80 /* TabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
 		10D8907024FCE59200909C80 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +143,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		10581AE224FE448B00185DA9 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				10581AE324FE44A000185DA9 /* EventViewController.swift */,
+				10581AE524FE44CB00185DA9 /* EventCollectionViewCell.swift */,
+				10581AED24FE54E300185DA9 /* EventTableViewController.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		10581AE724FE459900185DA9 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				10581AE824FE45A100185DA9 /* Event */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		10581AE824FE45A100185DA9 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				10581AEB24FE489F00185DA9 /* EventCollectionViewCell.xib */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		10581AF524FE573B00185DA9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				10581AF624FE575D00185DA9 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		10D8906924FCDF3000909C80 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +188,7 @@
 		10D8906C24FCE2AC00909C80 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				10581AE224FE448B00185DA9 /* Event */,
 				10D8907724FCFB7200909C80 /* POI */,
 				10D8906F24FCE58000909C80 /* NewsFeed */,
 			);
@@ -165,6 +218,8 @@
 			children = (
 				10D8907824FCFD0F00909C80 /* POIViewController.swift */,
 				10D8907A24FCFECC00909C80 /* POICellView.swift */,
+				10581ADA24FE250D00185DA9 /* POIListViewController.swift */,
+				10581AE024FE263900185DA9 /* POIItemCellView.swift */,
 			);
 			path = POI;
 			sourceTree = "<group>";
@@ -194,6 +249,8 @@
 		10DDD02D24FCD63000E42760 /* BinaryNews */ = {
 			isa = PBXGroup;
 			children = (
+				10581AF524FE573B00185DA9 /* Helpers */,
+				10581AE724FE459900185DA9 /* Xibs */,
 				FA1B773124FD52AD00D78CF6 /* Views */,
 				10D8907424FCEDEF00909C80 /* Extension */,
 				10D8906C24FCE2AC00909C80 /* ViewControllers */,
@@ -244,6 +301,8 @@
 		FA1B773124FD52AD00D78CF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10581AF324FE560400185DA9 /* Rotatable.swift */,
+				10581AF124FE55EC00185DA9 /* AnimationBarButton.swift */,
 				FA1B773224FD52BE00D78CF6 /* TabBarItemView.swift */,
 				FA1B773424FD53FF00D78CF6 /* NavigationViewController.swift */,
 			);
@@ -359,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10581AEC24FE489F00185DA9 /* EventCollectionViewCell.xib in Resources */,
 				10DDD03B24FCD63800E42760 /* LaunchScreen.storyboard in Resources */,
 				10DDD03824FCD63800E42760 /* Assets.xcassets in Resources */,
 				10DDD03624FCD63000E42760 /* Main.storyboard in Resources */,
@@ -489,16 +549,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10581AF224FE55EC00185DA9 /* AnimationBarButton.swift in Sources */,
+				10581AE124FE263900185DA9 /* POIItemCellView.swift in Sources */,
 				FA1B773524FD53FF00D78CF6 /* NavigationViewController.swift in Sources */,
 				10DDD03324FCD63000E42760 /* ViewController.swift in Sources */,
 				10DDD02F24FCD63000E42760 /* AppDelegate.swift in Sources */,
+				10581ADB24FE250D00185DA9 /* POIListViewController.swift in Sources */,
+				10581AE424FE44A000185DA9 /* EventViewController.swift in Sources */,
 				10D8907924FCFD0F00909C80 /* POIViewController.swift in Sources */,
+				10581AF724FE575D00185DA9 /* Helper.swift in Sources */,
 				10D8906824FCD99300909C80 /* SpashViewController.swift in Sources */,
+				10581AE624FE44CB00185DA9 /* EventCollectionViewCell.swift in Sources */,
 				10D8906B24FCDF4E00909C80 /* TabBarManager.swift in Sources */,
+				10581AEE24FE54E300185DA9 /* EventTableViewController.swift in Sources */,
 				FA1B773724FD571F00D78CF6 /* NewsDetailViewController.swift in Sources */,
 				10D8907324FCE69200909C80 /* NewsCellView.swift in Sources */,
 				10DDD03124FCD63000E42760 /* SceneDelegate.swift in Sources */,
 				FA1B773324FD52BE00D78CF6 /* TabBarItemView.swift in Sources */,
+				10581AF424FE560400185DA9 /* Rotatable.swift in Sources */,
 				10D8907B24FCFECC00909C80 /* POICellView.swift in Sources */,
 				10D8907624FCEE0400909C80 /* UIStoryboard+Extension.swift in Sources */,
 				10D8907124FCE59200909C80 /* NewsFeedViewController.swift in Sources */,

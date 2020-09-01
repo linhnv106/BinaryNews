@@ -8,6 +8,8 @@ target 'BinaryNews' do
   # Pods for BinaryNews
   pod "ESTabBarController-swift"
   pod 'BetterSegmentedControl', '~> 1.3'
+  pod 'Cosmos', '~> 22.1'
+  pod 'expanding-collection'
 
   target 'BinaryNewsTests' do
     inherit! :search_paths
